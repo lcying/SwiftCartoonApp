@@ -33,7 +33,6 @@ class LCYHomeRecommandController: LCYBaseViewController {
         })
     }
     
-    
     // MARK: - methods ----------------
     
     func loadData() {
