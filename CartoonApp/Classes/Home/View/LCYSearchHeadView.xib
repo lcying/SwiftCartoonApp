@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="LCYSearchHeadView" customModule="CartoonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家都在搜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGa-Kt-okR">
+                    <rect key="frame" x="15" y="17" width="67" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.59183355340375587" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raF-7a-9HX">
+                    <rect key="frame" x="260" y="0.0" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="wz0-9u-ob7"/>
+                    </constraints>
+                    <state key="normal" image="search_keyword_refresh"/>
+                    <connections>
+                        <action selector="refreshAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="kfB-Mi-V0J"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVA-zX-QF9">
+                    <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.91652912265258213" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fEl-GA-4qi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MVA-zX-QF9" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="J95-9K-6Yu"/>
+                <constraint firstAttribute="bottom" secondItem="MVA-zX-QF9" secondAttribute="bottom" id="LCr-s3-sym"/>
+                <constraint firstItem="AGa-Kt-okR" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="UFL-kP-YzC"/>
+                <constraint firstAttribute="bottom" secondItem="raF-7a-9HX" secondAttribute="bottom" id="f5r-vE-aD2"/>
+                <constraint firstItem="raF-7a-9HX" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="jOe-gx-1Fb"/>
+                <constraint firstItem="raF-7a-9HX" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="lzy-nK-ktq"/>
+                <constraint firstItem="AGa-Kt-okR" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="nNQ-nq-VEz"/>
+                <constraint firstItem="MVA-zX-QF9" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="z0U-qz-3yj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="147.82608695652175" y="34.821428571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="search_keyword_refresh" width="13.5" height="14"/>
+    </resources>
+</document>

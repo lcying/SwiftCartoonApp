@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LCYCategoryCell" customModule="CartoonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal_placeholder_v" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-Qx-8St">
+                        <rect key="frame" x="0.0" y="0.0" width="131" height="99"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q0-Th-HMk">
+                        <rect key="frame" x="0.0" y="99" width="131" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="doy-Ab-aqf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2q0-Th-HMk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7AJ-hv-Wh6"/>
+                <constraint firstAttribute="trailing" secondItem="2q0-Th-HMk" secondAttribute="trailing" id="Ccy-X8-BId"/>
+                <constraint firstItem="OtX-Qx-8St" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EIX-pi-TVI"/>
+                <constraint firstItem="OtX-Qx-8St" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QFu-oe-6VJ"/>
+                <constraint firstAttribute="bottom" secondItem="OtX-Qx-8St" secondAttribute="bottom" constant="20" id="acg-Sq-qxL"/>
+                <constraint firstAttribute="bottom" secondItem="2q0-Th-HMk" secondAttribute="bottom" id="fhw-jW-OAx"/>
+                <constraint firstAttribute="trailing" secondItem="OtX-Qx-8St" secondAttribute="trailing" id="gVr-xj-fDz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="131" height="119"/>
+            <connections>
+                <outlet property="imageView" destination="OtX-Qx-8St" id="s1r-qZ-Uh6"/>
+                <outlet property="titleLabel" destination="2q0-Th-HMk" id="qE1-KY-hmg"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="165.06696428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="normal_placeholder_v" width="139" height="176.5"/>
+    </resources>
+</document>

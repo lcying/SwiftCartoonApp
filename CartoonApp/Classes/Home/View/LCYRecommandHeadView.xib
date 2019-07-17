@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="LCYRecommandHeadView" customModule="CartoonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EoK-ZZ-t87">
+                    <rect key="frame" x="5" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8HM-hn-yIF"/>
+                        <constraint firstAttribute="height" constant="40" id="hiG-rc-igk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xy-PN-Mg4">
+                    <rect key="frame" x="55" y="16.5" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhu-7f-GuR">
+                    <rect key="frame" x="260" y="0.0" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="WaG-dv-2ob"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <state key="normal" title="···">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="moreAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Aoz-KT-JYw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EoK-ZZ-t87" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="3E1-63-dXL"/>
+                <constraint firstAttribute="bottom" secondItem="xhu-7f-GuR" secondAttribute="bottom" id="FBl-nt-WL2"/>
+                <constraint firstItem="EoK-ZZ-t87" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="5" id="Ijn-Ys-jJX"/>
+                <constraint firstItem="8xy-PN-Mg4" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="LFY-Fb-YzW"/>
+                <constraint firstItem="xhu-7f-GuR" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="gfz-bo-KY4"/>
+                <constraint firstItem="8xy-PN-Mg4" firstAttribute="leading" secondItem="EoK-ZZ-t87" secondAttribute="trailing" constant="10" id="vsS-XK-CJS"/>
+                <constraint firstAttribute="trailing" secondItem="xhu-7f-GuR" secondAttribute="trailing" id="wsc-pa-oNa"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="EoK-ZZ-t87" id="tnI-Uh-ii9"/>
+                <outlet property="titleLabel" destination="8xy-PN-Mg4" id="oQh-lF-lqT"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </collectionReusableView>
+    </objects>
+</document>
